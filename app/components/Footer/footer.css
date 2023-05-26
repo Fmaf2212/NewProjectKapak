@@ -1,0 +1,56 @@
+.blockFooter{
+    margin-top: 273px;
+    background-image: url(../../../public/img/FondoPiedePagina.png);
+    /* height: 690px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 110px; */
+    /* ------------- */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 690px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 110px;
+
+    & div:nth-child(1){
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        width: 100%;
+        top: -88px;
+        & img {
+            transition: .3s ease transform;
+        }
+        & img:hover{
+            transform: translateY(-88px);
+        }
+    }
+
+    & div:nth-child(3) {
+        & img{
+            margin-top: 80px;
+        }
+    }
+
+    .blockSiguenosEn{
+        & span{
+            font-family : FRADM;
+            font-size : 33px;
+            color : #FFFFFF;
+        }
+        & div{
+            display: flex;
+            gap: 25px;
+        }
+    }
+}

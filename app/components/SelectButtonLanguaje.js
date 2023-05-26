@@ -36,7 +36,7 @@ const SelectButtonLanguaje = () => {
         style={styles.buttonUnderline2}
         onClick={()=>setIsSelected(!isSelected)}
       >
-        Ingles
+        Ingles 
       </button>
     </div>
   );

@@ -1,0 +1,68 @@
+.sectionConvenio{
+    max-width: 1200px;
+    margin: 80px auto 194px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    & img{
+        height: fit-content;
+    }
+
+    .sectionConvenioText{
+        & h1{
+            font-family : FRADM;
+            font-size : 46px;
+            color : #4A4A49;
+
+            & span{
+                font-family : FRADM;
+                font-size : 96px;
+                color : #4A4A49;
+                line-height: 0.6;
+            }
+        }
+        & h4{
+            font-family : FRADM;
+            font-size : 33px;
+            color : #5DB929;
+            line-height: 1.2;
+        }
+        & p{
+            font-family : Arial;
+            font-size : 20px;
+            color : #4A4A49;
+            line-height: 1.2;
+            text-align: justify;
+        }
+    }
+}
+
+.sectionImagesCertificaciones{
+
+    & h3{
+        font-family : FRADM;
+        font-size : 66px;
+        color : #4A4A49;
+        text-align: center;
+    }
+    & hr{
+        background : #5DC429;
+        height: 8px;
+        width: 271px;
+        margin: auto;
+    }
+    .imagesCertificaciones{
+        display: flex;
+        justify-content: center;
+        margin-top: 211px;
+        padding-bottom: 100px;
+
+        & img {
+            transition: .3s ease transform;
+        }
+        & img:hover{
+            transform: translateY(-88px);
+        }
+    }
+}

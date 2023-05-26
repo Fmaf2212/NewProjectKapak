@@ -1,0 +1,115 @@
+.descQuienesSomos{
+    width: 1200px;
+    margin: auto;
+    padding: 70px 112px 123px 107px;
+
+    & h4{
+        font-family : FRADM;
+        font-size : 53px;
+        color : #4A4A49;
+    }
+
+    & p{
+        font-family : Arial;
+        font-size : 20px;
+        color : #4A4A49;
+    }
+}
+
+.blockMisionAndValores {
+  .blockMision {
+    display: flex;
+    gap: 58px;
+
+    .blockInfoMision {
+      & div {
+        display: flex;
+        align-items: end;
+        padding-top: 58px;
+
+        & p {
+          margin: 0;
+          width: fit-content;
+
+          .spanNuestra {
+            font-family: FRADM;
+            font-size: 66px;
+            color: #5DC529;
+            line-height: 1;
+          }
+
+          .spanMision {
+            font-family: FRADM;
+            font-size: 100px;
+            color: #5DC529;
+            line-height: 1;
+          }
+        }
+
+        & img {
+          width: 106px;
+          height: fit-content;
+          margin: 0 27px;
+        }
+      }
+
+      & p {
+        width: 60%;
+        font-family: Arial;
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.2;
+        color: #4A4A49;
+      }
+    }
+  }
+
+  .blockValores {
+    margin-top: 81px;
+    display: flex;
+    justify-content: space-between;
+
+    .blockInfoValores{
+      padding-top: 117px;
+      width: 100%;
+
+      & div{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+
+        & p{
+          margin: 0;
+          width: fit-content;
+
+          .spanNuestros{
+            font-family : FRADM;
+            font-size : 66px;
+            color : #5DC529;
+            line-height: 1;
+          }
+          .spanValores{
+            font-family : FRADM;
+            font-size : 100px;
+            color : #5DC529;
+            line-height: .8;
+          }
+        }
+        & img{
+          width: 97px;
+          height: fit-content;
+          margin: 0 27px;
+        }
+      }
+      & > p{
+        font-family: Arial;
+        font-size: 20px;
+        color: #4A4A49;
+        width: fit-content;
+        margin-left: auto;
+        padding-right: 180px;
+        line-height: 1.2;
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.backgroundImage{
+    /* background-image: url(../../../public/img/QuienesSomosPortada.png); */
+    background-size: cover;
+    height: 865px;
+
+    .backgroundImage__blockText{
+        width: 60%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+
+        & h1{
+            font-family : FRADM;
+            font-size : 149px;
+            color : #FFFFFF;
+            line-height: .8;
+            text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+            animation: loader2 3s normal;
+        }
+        & h2{
+            font-family : Bebas Kai;
+            font-size : 98px;
+            color : #FFFFFF;
+            text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            animation: loader 1.5s normal;
+        }
+    }
+}
+
+@keyframes loader {
+    0% {
+        translate: -100%;
+        opacity: 0;
+    }
+
+    100% {
+        translate: 0;
+        opacity: 1;
+    }
+}
+@keyframes loader2 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

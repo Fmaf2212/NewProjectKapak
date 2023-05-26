@@ -1,0 +1,18 @@
+.sectionNuestrosProductos{
+    & p{
+        font-family : FRADM;
+        font-size : 30px;
+        color : #4A4A49;
+        max-width: 671px;
+        margin: 80.5px auto;
+    }
+
+    .sectionNuestrosProductos__img{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        gap: 47px;
+        max-width: 1238px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,99 @@
+.sectionNuestraIdentidad{
+    max-width: 1200px;
+    margin: 69px auto 0;
+
+    & h3{
+        font-family : FRADM;
+        font-size : 50px;
+        color : #4A4A49;
+        text-align: center;
+        line-height: .8;
+    }
+    & p{
+        font-family : Arial;
+        font-size : 20px;
+        color : #4A4A49;
+        text-align: center;
+        max-width: 769px;
+        margin: 31px auto 131px;
+    }
+}
+
+
+.sectionSlider{
+    max-width: 1200px;
+    margin: 69px auto 0;
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        .next-btn, .prev-btn{
+            z-index: 9;
+            position: relative;
+        }
+        .prev-btn{
+            left: 230px;
+        }
+        .next-btn{
+            right: 230px;
+        }
+
+        .slider-container {
+            display: flex;
+            transition: transform 0.3s ease-in-out;
+
+            .slide {
+                flex: 0 0 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                & img{
+                    margin: auto;
+                }
+
+                & p {
+                    font-family: Arial;
+                    font-size: 20px;
+                    color: #4A4A49;
+                    text-align: center;
+                    max-width: 769px;
+                    margin-top: 70px;
+                }
+            }
+        }
+    }
+}
+
+.sectionObjetivosGlobales{
+    max-width: 1200px;
+    margin: 166px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 68px;
+
+    & img{
+        height: fit-content;
+    }
+
+    & div{
+        & h4{
+            font-family : FRADM;
+            font-size : 43px;
+            color : #5DC929;
+            line-height: 1.2;
+        }
+        & p{
+            font-family : Arial;
+            font-size : 20px;
+            color : #4A4A49;
+            line-height: 1.2;
+            margin: 44px 0;
+        }
+    }
+}
