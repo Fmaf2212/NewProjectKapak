@@ -1,0 +1,174 @@
+.sectionMensajeSuperior{
+    max-width: 1200px;
+    margin: 140px auto;
+
+    & p{
+        background : rgba(93, 184, 41, 1);
+        border-radius : 28px;
+        -moz-border-radius : 28px;
+        -webkit-border-radius : 28px;
+        font-family : Arial;
+        font-size : 39px;
+        color : #FFFFFF;
+        margin: 0;
+        padding: 0 30px;
+        line-height: 1.2;
+    }
+
+    & p:nth-last-child(1){
+        width: fit-content;
+        margin: auto;
+        border-radius : 13px;
+        -moz-border-radius : 13px;
+        -webkit-border-radius : 13px;
+    }
+}
+.mainWhatsappAndFormulario{
+    display: flex;
+    justify-content: center;
+    gap: 105px;
+
+    .sectionBloqueIzquierdaWhatsApp{
+        .trabajemosJuntos{
+            font-family : FRADM;
+            font-size : 55px;
+            color : #606060;
+            text-align: center;
+            margin-top: 131px;
+            margin-bottom: 268px;
+        }
+
+        .enlaces{
+            .enlaceWhatsApp, .enlaceCorreo, .enlaceDireccion{
+                font-family : FRADM;
+                font-size : 35px;
+            }
+            .enlaceWhatsApp, .enlaceCorreo{
+                color : #5DC829;
+            }
+            .enlaceCorreo{
+                display: flex;
+                gap: 28px;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+            }
+            .enlaceDireccion{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                color : #000000;
+                overflow-wrap: anywhere;
+                text-align: center;
+                max-width: 400px;
+                margin: 53px auto;
+            }
+        }
+    }
+
+    .sectionFormulario{
+        margin: 20px;
+        width: 858px;
+        /* box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+        /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+        box-shadow: rgba(0, 0, 0, 6.4) 0px 0px 15px 0px;
+        & h1{
+            font-family : FRADM;
+            font-size : 44px;
+            color : #000000;
+            text-align: center;
+            max-width: 223px;
+            margin: 47px auto;
+            line-height: 1.2;
+        }
+
+        & form {
+            .input-group{
+                position: relative;
+                overflow: hidden;
+                height: 90px;
+                margin: 0 26px 40px 26px;
+
+                & input{
+                    width: 100%;
+                    height: 100%;
+                    background: none;
+                    padding-top: 20px;
+                    border: none;
+                    outline: 0px;
+                    font-family : Arial;
+                    font-size : 25px;
+                }
+                .lbl-nombre{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid #c7c7c7;
+
+                    .text-nomb{
+                        position: absolute;
+                        bottom: 5px;
+                        left: 0;
+                        transition: all 0.3s ease;
+                        color: #c7c7c7;
+                        font-family : Arial;
+                        font-size : 28px;
+                    }
+                }
+                .lbl-nombre:after{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -1px;
+                    width: 100%;
+                    height: 100%;
+                    border-bottom: 3px solid #000;
+                    transform: translateX(-100%);
+                    transition: all 0.3s ease;
+                }
+                & input:focus + .lbl-nombre .text-nomb, & input:valid + .lbl-nombre .text-nomb{
+                    transform: translateY(-150%);
+                    font-size : 25px;
+                    color: #000;
+                }
+                & input:focus + .lbl-nombre:after, & input:valid + .lbl-nombre:after{
+                    transform: translateX(0%);
+                }
+                @media only screen and (min-width:320px) and (max-width:768px){
+                    .form{
+                        width:85%;
+                    }
+                }
+            }
+
+            .divInputSubmit{
+                width: fit-content;
+                height: min-content;
+                margin-left: auto;
+                margin-right: 44px;
+
+                & button{
+                    background : rgba(93, 200, 41, .7);
+                    border-radius : 10px;
+                    -moz-border-radius : 10px;
+                    -webkit-border-radius : 10px;
+                    font-family : FRADM;
+                    font-size : 44px;
+                    color : #F4F4F4;
+                    padding: 0 33px;
+                    margin-bottom: 20px;
+                    transition: .3s ease background, .3s ease color;
+                    line-height: 1.2;
+                }
+                & button:hover{
+                    background : rgba(93, 200, 41, 1);
+                    color : #fff;
+                }
+            }
+        }
+    }
+}

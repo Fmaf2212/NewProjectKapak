@@ -1,3 +1,5 @@
+"use client"
+
 import { useState } from 'react';
 
 import FlechaDerecha from '../../public/img/NuestraEmpresa/FlechaDerecha.png';

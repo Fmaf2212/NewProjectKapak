@@ -1,14 +1,74 @@
-'use client'
+"use client"
 
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import logoKapak from '../../public/imgLogo135px-02.png'
+
+// export async function getServerSideProps(context) {
+//   const currentUrl = context.req.url;
+
+//   return {
+//     props: {
+//       currentUrl
+//     }
+//   };
+// }
 
 const Header = () => {
   function clickBtnBurguer() {
     document.getElementById("btn-burguer").classList.toggle("toClose");
     document.getElementById("menucontent").classList.toggle("ShowedMenu");
+
+    if(document.getElementById("btn-burguer").classList.contains("toClose")){
+      document.body.style.overflow = "hidden";
+    }else{
+      document.body.removeAttribute("style");
+    }
+
+    var pathname = window.location.pathname;
+
+    if(pathname === '/quienesSomos'){
+      // document.getElementById("imgFooterQuienesSomos").style.transform = "translateY(-88px)"
+      document.getElementById("linkQuienesSomos").style.backgroundColor = "rgba(93, 204, 41, .7)"
+      document.getElementById("linkNuestraEmpresa").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkContacto").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkCertificaciones").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestroProductos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+    } else if(pathname === '/nuestraEmpresa'){
+      // document.getElementById("imgFooterNuestraEmpresa").style.transform = "translateY(-88px)"
+      document.getElementById("linkQuienesSomos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestraEmpresa").style.backgroundColor = "rgba(93, 204, 41, .7)"
+      document.getElementById("linkContacto").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkCertificaciones").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestroProductos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+    } else if(pathname === '/contacto'){
+      // document.getElementById("imgFooterContacto").style.transform = "translateY(-88px)"
+      document.getElementById("linkQuienesSomos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestraEmpresa").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkContacto").style.backgroundColor = "rgba(93, 204, 41, .7)"
+      document.getElementById("linkCertificaciones").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestroProductos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+    } else if(pathname === '/certificaciones'){
+      // document.getElementById("imgFooterCertificaciones").style.transform = "translateY(-88px)"
+      document.getElementById("linkQuienesSomos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestraEmpresa").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkContacto").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkCertificaciones").style.backgroundColor = "rgba(93, 204, 41, .7)"
+      document.getElementById("linkNuestroProductos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+    } else if(pathname === '/nuestrosProductos'){
+      // document.getElementById("imgFooterNuestrosProductos").style.transform = "translateY(-88px)"
+      document.getElementById("linkQuienesSomos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestraEmpresa").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkContacto").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkCertificaciones").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestroProductos").style.backgroundColor = "rgba(93, 204, 41, .7)"
+    } else{
+      document.getElementById("linkQuienesSomos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestraEmpresa").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkContacto").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkCertificaciones").style.backgroundColor = "rgba(0, 0, 0, .5)"
+      document.getElementById("linkNuestroProductos").style.backgroundColor = "rgba(0, 0, 0, .5)"
+    }
   }
 
   return (
@@ -60,8 +120,8 @@ const Header = () => {
             <div className="menu-top-menu-container">
               <ul id="menu-top-menu" className="ms-iboxitems">
                 <li
-                  id="menu-item-71"
-                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-71 ms-navitemsDad"
+                  id="linkQuienesSomos"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children linkQuienesSomos ms-navitemsDad"
                 >
                   <Link
                     className="toggle"
@@ -72,8 +132,8 @@ const Header = () => {
                   </Link>
                 </li>
                 <li
-                  id="menu-item-489"
-                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-489 ms-navitemsDad"
+                  id="linkNuestraEmpresa"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children linkNuestraEmpresa ms-navitemsDad"
                 >
                   <Link
                     className="toggle"
@@ -84,8 +144,8 @@ const Header = () => {
                   </Link>
                 </li>
                 <li
-                  id="menu-item-87"
-                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-87 ms-navitemsDad"
+                  id="linkContacto"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children linkContacto ms-navitemsDad"
                 >
                   <Link
                     className="toggle"
@@ -101,6 +161,7 @@ const Header = () => {
                     onClick={clickBtnBurguer}
                   >
                     <Image src={logoKapak} alt="logoKapak" width={71} />
+                    {/* <p>{currentUrl}</p> */}
                   </Link>
                   <h1
                     className="testFont"
@@ -127,8 +188,8 @@ const Header = () => {
                   </span>
                 </div>
                 <li
-                  id="menu-item-145"
-                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-145 ms-navitemsDad"
+                  id="linkCertificaciones"
+                  className="menu-item menu-item-type-post_type menu-item-object-page linkCertificaciones ms-navitemsDad"
                 >
                   <Link
                     className="toggle"
@@ -139,13 +200,14 @@ const Header = () => {
                   </Link>
                 </li>
                 <li
-                  id="menu-item-136"
-                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-136 ms-navitemsDad"
+                  id="linkNuestroProductos"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children linkNuestroProductos ms-navitemsDad"
                 >
                   <Link
                     className="toggle"
                     href="/nuestrosProductos"
                     onClick={clickBtnBurguer}
+                    style={{padding: "5px 20px"}}
                   >
                     Nuestros Productos
                   </Link>

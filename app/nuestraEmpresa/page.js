@@ -1,5 +1,3 @@
-"use client";
-
 import BackgroundTopPage from "../components/BackgroundTopPage/BackgroundTopPage";
 
 import Foto from "../../public/img/NuestraEmpresa/Foto.png";
