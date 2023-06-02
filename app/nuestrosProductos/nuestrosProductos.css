@@ -14,5 +14,14 @@
         gap: 47px;
         max-width: 1238px;
         margin: auto;
+
+        & img{
+            transition: .3s ease filter;
+            cursor: pointer;
+        }
+
+        & img:hover{
+            filter: brightness(.6);
+        }
     }
 }

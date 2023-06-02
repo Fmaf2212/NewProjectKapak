@@ -10,9 +10,12 @@ const BackToTop = () => {
 
     useEffect(() => {
       window.addEventListener("scroll", () => {
+        let parteInferiorMaxima = document.body.offsetHeight - 969;
         if(window.scrollY > 100) {
           setBackToTopButton(true)
-        }else{
+        }else {
+          setBackToTopButton(false)
+        } if(window.scrollY === parteInferiorMaxima){
           setBackToTopButton(false)
         }
       })

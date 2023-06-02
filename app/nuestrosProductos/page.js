@@ -18,7 +18,7 @@ import Footer from "../components/Footer/Footer";
 const page = () => {
   return (
     <>
-        <BackgroundTopPage text={'NUESTROS PRODUCTOS'} img={'PortadaNuestrosProductos.png'}/>
+        <BackgroundTopPage left={'-160px'} text={'NUESTROS PRODUCTOS'} img={'PortadaNuestrosProductos.png'}/>
         <section className="sectionNuestrosProductos">
           <p>Nuestras marcas son tan diversas como los más de
 20 países en los que comercializamos nuestros

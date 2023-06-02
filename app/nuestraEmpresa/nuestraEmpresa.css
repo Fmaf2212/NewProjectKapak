@@ -1,13 +1,13 @@
 .sectionNuestraIdentidad{
     max-width: 1200px;
-    margin: 69px auto 0;
+    margin: 0 auto;
+    padding-top: 80px;
 
     & h3{
         font-family : FRADM;
         font-size : 50px;
         color : #4A4A49;
         text-align: center;
-        line-height: .8;
     }
     & p{
         font-family : Arial;

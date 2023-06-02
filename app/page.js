@@ -30,7 +30,7 @@ function Home() {
         >
           <Image src={logoKapak} alt="logoKapak" width={135} />
           <TextMainPage />
-          <SelectButtonLanguaje />
+          {/* <SelectButtonLanguaje /> */}
         </div>
       </main>
     </>

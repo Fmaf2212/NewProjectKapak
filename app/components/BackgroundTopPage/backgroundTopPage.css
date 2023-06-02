@@ -11,6 +11,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
+        padding-top: 70px;
 
         & h1{
             font-family : FRADM;
@@ -18,7 +19,7 @@
             color : #FFFFFF;
             line-height: .8;
             text-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
-            animation: loader2 3s normal;
+            animation: loader2 2.5s normal;
         }
         & h2{
             font-family : Bebas Kai;
@@ -26,6 +27,7 @@
             color : #FFFFFF;
             text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
             animation: loader 1.5s normal;
+            margin-bottom: 30px;
         }
     }
 }

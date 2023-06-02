@@ -5,11 +5,16 @@
     align-items: center;
     gap: 50px;
 
-    & img{
-        height: fit-content;
+    & div{
+
+        & img{
+            height: fit-content;
+        }
     }
 
     .sectionConvenioText{
+        width: fit-content;
+
         & h1{
             font-family : FRADM;
             font-size : 46px;
@@ -55,7 +60,7 @@
     .imagesCertificaciones{
         display: flex;
         justify-content: center;
-        margin-top: 211px;
+        margin-top: 111px;
         padding-bottom: 100px;
 
         & img {

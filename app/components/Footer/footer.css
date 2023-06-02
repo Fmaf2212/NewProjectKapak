@@ -1,28 +1,27 @@
-.blockFooter{
-    margin-top: 273px;
-    background-image: url(../../../public/img/FondoPiedePagina.png);
-    /* height: 690px;
+.blockFooter {
+  margin-top: 273px;
+  background-image: url(../../../public/img/FondoPiedePagina.png);
+  /* height: 690px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 110px; */
-    /* ------------- */
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 690px;
-    width: 100%;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 110px;
+  /* ------------- */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 690px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 
-    & div:nth-child(1){
+  /* & div:nth-child(1){
         display: flex;
         justify-content: space-evenly;
         position: absolute;
@@ -34,23 +33,84 @@
         & img:hover{
             transform: translateY(-88px);
         }
+    } */
+
+  & div:nth-child(2) {
+    & img {
+      margin-top: 0;
+    }
+  }
+
+  .blockSiguenosEn {
+    & span {
+      font-family: FRADM;
+      font-size: 33px;
+      color: #FFFFFF;
     }
 
-    & div:nth-child(3) {
+    & div {
+      display: flex;
+      gap: 25px;
+
+      & a {
         & img{
-            margin-top: 80px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .barraNavegaciónInferior {
+    height: 150px;
+    background-color: #5DC429;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+      & a {
+        background-color: #5DC429;
+        position: relative;
+        bottom: 0;
+        transition: .3s ease margin-top;
+        border-radius: 10px;
+
+        & div{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          padding: 20px 5px 0 5px;
+          width: 220px;
+
+          & p {
+            font-family: FRADM;
+            font-size: 0;
+            color: #FFFFFF;
+            text-align: center;
+            width: 100%;
+            text-overflow: ellipsis;
+            transition: .3s ease font-size;
+            margin: auto;
+            display: none;
+            height: 75px;
+          }
         }
     }
 
-    .blockSiguenosEn{
-        & span{
-            font-family : FRADM;
-            font-size : 33px;
-            color : #FFFFFF;
-        }
-        & div{
-            display: flex;
-            gap: 25px;
-        }
+    & a:hover {
+      /* transform: translateY(-50px); */
+      margin-top: -80px;
     }
+
+    & a:hover div {
+      /* transform: translateY(-50px); */
+      & p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+      }
+    }
+  }
 }

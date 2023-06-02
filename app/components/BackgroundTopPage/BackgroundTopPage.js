@@ -2,7 +2,7 @@ import React from "react";
 
 import "./backgroundTopPage.css";
 
-const BackgroundTopPage = ({ text, img }) => {
+const BackgroundTopPage = ({ text, img, left }) => {
   // function cambiandoBackgroundImage() {
   //   var elemento = document.getElementById("backgroundImage");
   //   elemento.style.setProperty(
@@ -15,7 +15,7 @@ const BackgroundTopPage = ({ text, img }) => {
   return (
     <div id="backgroundImage" className="backgroundImage" style={{ backgroundImage: `url(/img/${img})` }}>
       <div className="backgroundImage__blockText">
-        <h2>{text}</h2>
+        <h2 style={{marginLeft: `${left}`}}>{text}</h2>
         <h1>
           KAPAK <br />
           HUAYTA
